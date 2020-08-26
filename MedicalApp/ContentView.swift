@@ -10,7 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            Color(#colorLiteral(red: 0.9506489635, green: 0.9649930596, blue: 0.9777397513, alpha: 1)).edgesIgnoringSafeArea(.all)
+            
+            NavigationView() {
+                ProfileView()
+            }
+        }
     }
 }
 
@@ -19,3 +25,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
